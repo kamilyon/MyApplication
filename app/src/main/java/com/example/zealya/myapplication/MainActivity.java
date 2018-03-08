@@ -16,6 +16,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initViews(){
+        //TabLayout name = ...
+        //https://developer.android.com/reference/android/support/design/widget/TabLayout.html
+        
         //ListFragment namedFragment = new ListFragment(...)
         //https://developer.android.com/guide/components/fragments.html
         // use the fragment manager to start your fragment 
