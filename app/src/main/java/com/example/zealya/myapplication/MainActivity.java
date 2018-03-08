@@ -16,24 +16,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initViews(){
-        RecyclerView recyclerView = (RecyclerView)findViewById(R.id.card_recycler_view);
-        recyclerView.setHasFixedSize(true);
-        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(recyclerView.getContext(), 2);
-        recyclerView.setLayoutManager(layoutManager);
-
-        //ArrayList androidVersions = prepareData();
-      //  DataAdapter adapter = new DataAdapter(getApplicationContext(),androidVersions);
-        recyclerView.setAdapter(adapter);
-
+        //ListFragment namedFragment = new ListFragment(...)
+        //https://developer.android.com/guide/components/fragments.html
+        // use the fragment manager to start your fragment 
     }
-/*
-    @Override public void getView(int position, View convertView, ViewGroup parent) {
-        SquaredImageView view = (SquaredImageView) convertView;
-        if (view == null) {
-            view = new SquaredImageView(context);
-        }
-        String url = getItem(position);
-
-        Picasso.with(context).load(url).into(view);
-    } */
 }
